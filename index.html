@@ -6,21 +6,25 @@
 -->
 <html>
 	<head>
-		<title>Mary Cells</title>
+		<title>Mary Cell</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+			<link rel="shortcut icon" href="img/logo.ico">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
 
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header">
-				<h1>TEST</h1>
+				<h1>Maricell</h1>
 				<nav>
 					<ul>
 						<li><a href="#intro">Inicio</a></li>
@@ -34,17 +38,18 @@
 
 		<!-- Intro -->
 			<section id="intro" class="main style1 dark fullscreen">
-				<div class="content">
+				<div class="container">
+					<!-- Top Navigation -->
 
-					<header>
-						<h2>Bienvenidos</h2>
-					</header>
-					<p>Gracias por visitar nuestra tienda virtual <strong>Mary Cells. </strong></p> <p>Será un placer atenderlos desde nuestra página web.</p>
-					<footer>
-						<a href="#one" class="button style2 down">More</a>
-					</footer>
+					<div id="boxgallery" class="boxgallery" data-effect="effect-1">
+						<div class="panel"><img src="img/5.jpeg" alt="Image 1"/></div>
+						<div class="panel"><img src="img/6.jpg" alt="Image 2"/></div>
+						<div class="panel"><img src="img/3.jpg" alt="Image 3"/></div>
+						<div class="panel"><img src="img/4.jpg" alt="Image 4"/></div>
+					</div>
 
-				</div>
+				</div><!-- /container -->
+
 			</section>
 
 		<!-- One -->
@@ -156,6 +161,13 @@ Otros productos son: tablets, accesorios, cargadores, baterías, estuches, audí
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+
+			<script src="js/classie.js"></script>
+			<script src="js/boxesFx.js"></script>
+			<script>
+				new BoxesFx( document.getElementById( 'boxgallery' ) );
+			</script>
 
 	</body>
 </html>
