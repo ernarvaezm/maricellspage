@@ -1285,8 +1285,9 @@
 		}
 
 			.gallery article .image {
-				margin: 0;
+				margin: 10;
 				display: block;
+
 			}
 
 			.gallery article:nth-last-child(1n) {
