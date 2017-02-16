@@ -18,6 +18,8 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<script src="js/modernizr.custom.js"></script>
+		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		<script type="text/javascript" src="http://smtpjs.com/smtp.js"></script>
 
 	</head>
 	<body>
@@ -127,7 +129,7 @@ Otros productos son: tablets, accesorios, cargadores, baterías, estuches, audí
 						<p>Puede dejarnos sus consultas.</p>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
+						<form method="post" action="sendEmail.php">
 							<div class="field half first"><input type="text" name="name" placeholder="Nombre" /></div>
 							<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
 							<div class="field"><textarea name="message" placeholder="Mensaje" rows="6"></textarea></div>
@@ -172,6 +174,6 @@ Otros productos son: tablets, accesorios, cargadores, baterías, estuches, audí
 			<script>
 				new BoxesFx( document.getElementById( 'boxgallery' ) );
 			</script>
-
+<script src="assets/js/.index.js"></script>
 	</body>
 </html>
